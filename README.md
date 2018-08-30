@@ -10,7 +10,7 @@
 
 ## 2. script 的加载顺序
 假设如下简单代码，我们去看一下，执行的结果是什么样子？
-```html
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -117,3 +117,5 @@ async 则是下载完立即执行。
 - `defer` 会在 `DOMContentLoaded` 前依次执行 （可以利用这两点哦！）
 `async` 则是下载完立即执行，不一定是在 `DOMContentLoaded` 前
 - `async` 因为顺序无关，所以很适合无依赖js
+
+[测试地址](https://lozoe.github.io/async-defer/) 打开控制台
